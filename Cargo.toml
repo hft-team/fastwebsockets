@@ -33,11 +33,11 @@ tokio = { git = "https://github.com/hft-team/tokio-dpdk.git", branch = "tokio-1.
 
 simdutf8 = { version = "0.1.4", optional = true }
 #hyper-util = { version = "0.1.0", features = ["tokio"], optional = true }
-hyper-util = { git = "https://github.com/hft-team/hyper-util-dpdk.git",branch = "v0.1.5", features = ["tokio"], optional = true }
+hyper-util = { git = "https://github.com/hft-team/hyper-util-dpdk.git", branch = "v0.1.5", features = ["tokio"], optional = true }
 http-body-util = { version = "0.1.0", optional = true }
 #hyper = { version = "1", features = ["http1", "server", "client"], optional = true }
 # https://github.com/hft-team/hyper-dpdk.git
-hyper = {git = "https://github.com/hft-team/hyper-dpdk.git", branch = "dpdk", features = ["http1", "server", "client"], optional = true }
+hyper = { git = "https://github.com/hft-team/hyper-dpdk.git", branch = "dpdk", features = ["http1", "server", "client"], optional = true }
 pin-project = { version = "1.0.8", optional = true }
 base64 = { version = "0.21.0", optional = true }
 sha1 = { version = "0.10.5", optional = true }
@@ -61,7 +61,7 @@ unstable-split = []
 with_axum = ["axum-core", "http", "async-trait"]
 
 [dev-dependencies]
-tokio = { git = "https://github.com/hft-team/tokio-dpdk.git", branch = "tokio-1.37.0", features = ["io-util","macros"] }
+tokio = { git = "https://github.com/hft-team/tokio-dpdk.git", branch = "tokio-1.37.0", features = ["io-util", "macros"] }
 
 #tokio = { version = "1.25.0", features = ["full", "macros"] }
 #tokio-rustls = "0.24.0"
@@ -71,12 +71,12 @@ tokio-rustls = { git = "https://github.com/hft-team/tokio-rustls-dpdk.git", bran
 # https://github.com/hft-team/tokio-rustls.git
 rustls-pemfile = "1.0"
 #hyper-util = { version = "0.1.0", features = ["tokio"] }
-hyper-util = { git = "https://github.com/hft-team/hyper-util-dpdk.git",branch = "v0.1.5", features = ["tokio"]}
+hyper-util = { git = "https://github.com/hft-team/hyper-util-dpdk.git", branch = "v0.1.5", features = ["tokio"] }
 
 http-body-util = { version = "0.1.0" }
 #hyper = { version = "1", features = ["http1", "server", "client"] }
 # https://github.com/hft-team/hyper-dpdk.git
-hyper = {git = "https://github.com/hft-team/hyper-dpdk-dpdk.git", branch = "dpdk", features = ["http1", "server", "client"]}
+hyper = { git = "https://github.com/hft-team/hyper-dpdk.git", branch = "dpdk", features = ["http1", "server", "client"] }
 assert2 = "0.3.4"
 trybuild = "1.0.80"
 criterion = "0.4.0"
