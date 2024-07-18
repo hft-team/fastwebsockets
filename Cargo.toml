@@ -23,6 +23,11 @@ path = "examples/tls_client.rs"
 required-features = ["upgrade"]
 
 [[example]]
+name = "tls_client_bind"
+path = "examples/tls_client_bind.rs"
+required-features = ["upgrade"]
+
+[[example]]
 name = "axum"
 path = "examples/axum.rs"
 required-features = ["upgrade", "with_axum"]
@@ -30,6 +35,7 @@ required-features = ["upgrade", "with_axum"]
 [dependencies]
 #tokio = { version = "1.25.0",  default-features = false, features = ["io-util"] }
 tokio = { git = "https://github.com/hft-team/tokio-dpdk.git", branch = "tokio-1.37.0", features = ["io-util"] }
+fstack-mio = { git = "https://github.com/hft-team/fstack-mio.git", branch = "master" }
 
 simdutf8 = { version = "0.1.4", optional = true }
 #hyper-util = { version = "0.1.0", features = ["tokio"], optional = true }
